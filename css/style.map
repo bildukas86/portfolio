@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_base.scss"
+	],
+	"sourcesContent": [
+		"// ==========================================================================\r\n// Base Styles\r\n// ==========================================================================\r\n\r\n@import 'base.scss';\r\n",
+		"//default\r\n*{\r\n  box-sizing: border-box;\r\n}\r\nbody{\r\n  margin: 0;\r\n  \r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";ACCA,AAAA,CAAC,CAAA;EACC,UAAU,EAAE,UAAU;CACvB;;;AACD,AAAA,IAAI,CAAA;EACF,MAAM,EAAE,CAAC;CAEV"
+}
