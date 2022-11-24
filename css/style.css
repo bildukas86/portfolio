@@ -1,3 +1,10 @@
+/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_main-container.scss */
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 /* line 2, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_base.scss */
 * {
   box-sizing: border-box;
