@@ -1,0 +1,33 @@
+.banner{
+  .img-container>img{
+    width: 100vw;
+    height: 100vh-$aside-height;
+    object-fit: cover;
+  }
+  .card{
+    display: flex;
+    justify-content: center;
+    .card-title{
+      position: absolute;
+      padding: 5px;
+      background-color: black;
+      color: white;
+      bottom: 30vh;
+      max-width: 90vw;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .scroll-down{
+      position: absolute;
+      color: white;
+      bottom: 1vh;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 16px;
+      &:hover{
+        font-size: 18px;
+      }
+    }
+  }
+  }

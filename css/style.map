@@ -3,12 +3,20 @@
 	"file": "style.css",
 	"sources": [
 		"../scss/style.scss",
-		"../scss/_base.scss"
+		"../scss/_variables.scss",
+		"../scss/_base.scss",
+		"../scss/_main.scss",
+		"../scss/_aside.scss",
+		"../scss/_banner.scss"
 	],
 	"sourcesContent": [
-		"// ==========================================================================\r\n// Base Styles\r\n// ==========================================================================\r\n\r\n@import 'base.scss';\r\n",
-		"//default\r\n*{\r\n  box-sizing: border-box;\r\n}\r\nbody{\r\n  margin: 0;\r\n  \r\n}\r\n"
+		"// ==========================================================================\r\n// Base Styles\r\n// ==========================================================================\r\n@import 'variables.scss';\r\n@import 'base.scss';\r\n@import 'main.scss';\r\n@import 'aside.scss';\r\n@import 'banner.scss';\r\n",
+		"$aside-height: 10vh;\r\n",
+		"//default\r\n*{\r\n  box-sizing: border-box;\r\n}\r\nbody{\r\n  margin: 0;\r\n}\r\nul{\r\n\r\n}\r\na{\r\n  text-decoration: none;\r\n}\r\nli{\r\n  list-style-type: none;\r\n}\r\n///just visualize\r\n#aside{\r\n  background-color: grey;\r\n}\r\n",
+		"\r\n",
+		"#aside{\r\n  width: 100vw;\r\n  min-height: $aside-height;\r\n  top: 0;\r\n\r\n}\r\n",
+		".banner{\r\n  .img-container>img{\r\n    width: 100vw;\r\n    height: 100vh-$aside-height;\r\n    object-fit: cover;\r\n  }\r\n  .card{\r\n    display: flex;\r\n    justify-content: center;\r\n    .card-title{\r\n      position: absolute;\r\n      padding: 5px;\r\n      background-color: black;\r\n      color: white;\r\n      bottom: 30vh;\r\n      max-width: 90vw;\r\n      letter-spacing: 0.1rem;\r\n      text-align: center;\r\n      text-transform: capitalize;\r\n    }\r\n    .scroll-down{\r\n      position: absolute;\r\n      color: white;\r\n      bottom: 1vh;\r\n      text-transform: capitalize;\r\n      text-align: center;\r\n      font-size: 16px;\r\n      &:hover{\r\n        font-size: 18px;\r\n      }\r\n    }\r\n  }\r\n  }\r\n"
 	],
 	"names": [],
-	"mappings": ";ACCA,AAAA,CAAC,CAAA;EACC,UAAU,EAAE,UAAU;CACvB;;;AACD,AAAA,IAAI,CAAA;EACF,MAAM,EAAE,CAAC;CAEV"
+	"mappings": ";AECA,AAAA,CAAC,CAAA;EACC,UAAU,EAAE,UAAU;CACvB;;;AACD,AAAA,IAAI,CAAA;EACF,MAAM,EAAE,CAAC;CACV;;;AAID,AAAA,CAAC,CAAA;EACC,eAAe,EAAE,IAAI;CACtB;;;AACD,AAAA,EAAE,CAAA;EACA,eAAe,EAAE,IAAI;CACtB;;;AAED,AAAA,MAAM,CAAA;EACJ,gBAAgB,EAAE,IAAI;CACvB;;;AEnBD,AAAA,MAAM,CAAA;EACJ,KAAK,EAAE,KAAK;EACZ,UAAU,EHFG,IAAI;EGGjB,GAAG,EAAE,CAAC;CAEP;;;ACLD,AACE,OADK,CACL,cAAc,GAAC,GAAG,CAAA;EAChB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAmB;EAC3B,UAAU,EAAE,KAAK;CAClB;;;AALH,AAME,OANK,CAML,KAAK,CAAA;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAuBxB;;;AA/BH,AASI,OATG,CAML,KAAK,CAGH,WAAW,CAAA;EACT,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,GAAG;EACZ,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,UAAU;CAC3B;;;AAnBL,AAoBI,OApBG,CAML,KAAK,CAcH,YAAY,CAAA;EACV,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,GAAG;EACX,cAAc,EAAE,UAAU;EAC1B,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;CAIhB;;;AA9BL,AA2BM,OA3BC,CAML,KAAK,CAcH,YAAY,AAOT,MAAM,CAAA;EACL,SAAS,EAAE,IAAI;CAChB"
 }
