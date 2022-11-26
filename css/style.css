@@ -5,13 +5,20 @@
   flex-direction: column;
 }
 
+/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_container.scss */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 /* line 2, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_base.scss */
 * {
   box-sizing: border-box;
 }
 
 /* line 5, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_base.scss */
-body {
+body, h1, h2, h3 {
   margin: 0;
 }
 
@@ -25,57 +32,32 @@ li {
   list-style-type: none;
 }
 
-/* line 18, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_base.scss */
-#aside {
-  background-color: grey;
+/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_nav.scss */
+#nav {
+  background-color: lightgrey;
+  height: 100px;
+  width: auto;
 }
 
-/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_aside.scss */
-#aside {
-  width: 100vw;
-  min-height: 10vh;
-  top: 0;
+/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
+.banner {
+  width: auto;
+  background-color: red;
 }
 
-/* line 2, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
-.banner .img-container > img {
-  width: 100vw;
-  height: 90vh;
-  object-fit: cover;
-}
-
-/* line 7, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
-.banner .card {
+/* line 5, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
+.banner .img-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
 }
 
 /* line 10, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
-.banner .card .card-title {
-  position: absolute;
-  padding: 5px;
-  background-color: black;
-  color: white;
-  bottom: 30vh;
-  max-width: 90vw;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-/* line 21, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
-.banner .card .scroll-down {
-  position: absolute;
-  color: white;
-  bottom: 1vh;
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 16px;
-}
-
-/* line 28, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
-.banner .card .scroll-down:hover {
-  font-size: 18px;
+.banner .img-container img {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
