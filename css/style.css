@@ -34,9 +34,18 @@ li {
 
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_nav.scss */
 #nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: lightgrey;
   height: 100px;
   width: auto;
+}
+
+/* line 9, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_nav.scss */
+#nav .logo img {
+  width: 128px;
+  height: 128px;
 }
 
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolio/scss/_banner.scss */
